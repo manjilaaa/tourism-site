@@ -1,0 +1,114 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    height: 2rem;
+    width: 2rem;
+    color: #16a34a; /* Tailwind's green-600 */
+  }
+  
+  .brand-name {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937; /* Tailwind's gray-800 */
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  .nav-link {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #16a34a;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .menu-icon {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    color: #1f2937;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon:hover {
+    color: #16a34a;
+  }
+  
+  .menu-svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    padding: 0.5rem 1rem 1rem;
+  }
+  
+  .mobile-link {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2937;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+  }
+  
+  .mobile-link:hover {
+    color: #16a34a;
+  }
+  
+  /* Media Query for Desktop */
+  @media (min-width: 768px) {
+    .desktop-menu {
+      display: flex;
+    }
+  
+    .mobile-menu-btn {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  }
+  
