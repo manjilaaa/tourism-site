@@ -84,6 +84,10 @@
   .social-icon {
     height: 1.5rem;
     width: 1.5rem;
+    position: relative;
+    right: -120px;
+    /* padding-left: 60px; */
+  
   }
   
   .footer-bottom {

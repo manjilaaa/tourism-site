@@ -22,13 +22,15 @@
   
   .brand {
     display: flex;
-    align-items: center;
+    justify-content: start;
+    padding-left: 0;
   }
   
   .icon {
     height: 2rem;
     width: 2rem;
     color: #16a34a; /* Tailwind's green-600 */
+   
   }
   
   .brand-name {

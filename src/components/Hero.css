@@ -40,7 +40,7 @@
   }
   
   .hero-button {
-    background-color: #16A34A;
+    
     /* hover:background-color: #15803D; */
     color: white;
     font-weight: bold;
@@ -50,7 +50,7 @@
   }
   
   .hero-button:hover {
-    background-color: #15803D;
+    color: black;
   }
   
   .hero-chevron {
