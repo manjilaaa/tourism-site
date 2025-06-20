@@ -1,0 +1,49 @@
+.admin-messages {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+.admin-messages h2 {
+  margin-bottom: 16px;
+  color: red;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.admin-messages p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 1rem;
+}
+.admin-messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+.admin-messages li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.admin-messages li p {
+  margin: 6px 0;
+}
+.admin-messages button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.admin-messages button:hover {
+  background-color: #c0392b;
+}

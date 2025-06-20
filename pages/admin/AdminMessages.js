@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import styles from './admin-messages.module.css'
 const AdminMessages = () => {
   const [messages, setMessages] = useState([]);
 
@@ -25,7 +25,7 @@ const AdminMessages = () => {
   }, []);
 
   return (
-    <div className="admin-messages">
+    <div className={styles['admin-messages']}>
       <h2>Contact Messages</h2>
       {messages.length === 0 ? (
         <p>No messages found.</p>
@@ -36,7 +36,7 @@ const AdminMessages = () => {
               <p><strong>Name:</strong> {msg.name}</p>
               <p><strong>Email:</strong> {msg.email}</p>
               <p><strong>Message:</strong> {msg.message}</p>
-              <button onClick={() => deleteMessage(msg.id)}>Delete</button>
+              <button className={styles.button}onClick={() => deleteMessage(msg.id)}>Delete</button>
             </li>
           ))}
         </ul>

@@ -19,7 +19,7 @@ const Contact = () => {
 
     // Send the form data to the backend API (POST request)
     try {
-      const res = await fetch('/api/messages', {
+      const res = await fetch('http://localhost:3000/api/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const Contact = () => {
 
       const data = await res.json();
 
-      if (res.status === 201) {
+      if (res.status === 200) {
         setStatus('Message sent successfully!');
       } else {
         setStatus(data.error || 'An error occurred');
@@ -51,7 +51,7 @@ const Contact = () => {
         <div className="section-header">
           <h2 className="section-title">Contact Us</h2>
           <p className="section-subtitle">
-            Get in touch for tour information and bookings
+            Fell free to reach out to us.
           </p>
         </div>
 
