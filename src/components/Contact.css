@@ -1,6 +1,7 @@
 .contact-section {
     background-color: white;
-    padding: 5rem 0;
+    margin-right: 90px;
+    
   }
   
   .container {
@@ -38,7 +39,7 @@
   }
   
   .contact-info {
-    background-color: #F9FAFB;
+    background-color: white;
     padding: 2rem;
     border-radius: 0.5rem;
   }

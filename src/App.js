@@ -6,6 +6,8 @@ import Hero from './components/Hero';
 import Attractions from './components/Attraction';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import ReviewForm from './components/ReviewForm';
+import ReviewList from './components/ReviewList';
 
 function App() {
   return (
@@ -14,7 +16,17 @@ function App() {
       <Hero/>
       <Attractions/>
       <Gallery/>
-      <Contact/>
+      <div className='contact-review-wrapper'>
+           <div className='contact-section'>
+                    <Contact/>
+           </div>
+           <div className='review-sections'>
+              <ReviewForm/>
+             
+           </div>
+      </div>
+      
+      
       <Footer/>
     </div>
   );
