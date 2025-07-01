@@ -1,7 +1,7 @@
 import pool from '../../../lib/db';
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Frontend origin
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Frontend origin
   res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
