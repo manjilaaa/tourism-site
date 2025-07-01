@@ -19,7 +19,7 @@ const Contact = () => {
 
     // Send the form data to the backend API (POST request)
     try {
-      const res = await fetch('http://localhost:3001/api/messages', {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/messages`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
